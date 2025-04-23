@@ -84,7 +84,7 @@ function M.progress()
         local val = args.data.params.value
         if val.message and val.kind ~= 'end' then
           idx = idx + 1 > #spinner and 1 or idx + 1
-          return ('%s'):format(spinner[idx - 1 > 0 and idx - 1 or 1])
+          return (' %s'):format(spinner[idx - 1 > 0 and idx - 1 or 1])
         end
       end
       return ''
