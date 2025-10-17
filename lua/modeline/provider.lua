@@ -53,7 +53,7 @@ end
 
 function M.fileinfo()
   return {
-    stl = [[%t]],
+    stl = '%t',
     name = 'fileinfo',
     event = { 'BufEnter' },
   }
